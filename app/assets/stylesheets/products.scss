@@ -20,6 +20,17 @@ main section.categories-show {
       margin-top:    20px;
       // margin:        10px;
 
+      span.sold_out_badge {
+        position: absolute;
+        float: left;
+        color: #eee;
+        margin: 0;
+        padding: 7px;
+        background-color: tomato;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
       header img {
         max-width: 100%;
         max-height: 140px;
@@ -72,5 +83,3 @@ main section.products-show {
     }
   }
 }
-
-
