@@ -6,7 +6,7 @@ Jungle displays a list of products which can be purchased. Products are created 
 
 This app was built using [Rails](https://rubyonrails.org/).
 
-## Final Products
+## Final Product
 
 Home page
 
