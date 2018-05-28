@@ -41,6 +41,8 @@
         </div>
       <% end %>
 
+      <div style="border: solid 1px; border-radius: 5px margin: 10px; padding: 10px">
+        <h4> Leave a review for this product </h4>
       <div class="form-group">
         <%= form.label :description %>
         <%= form.text_field :description, class: 'form-control' %>
@@ -55,16 +57,21 @@
     <% end %>
 
     <% end %>
-
-    <div class="row">
-
-      <div class="col-sm-8">
-        <dl class="dl-vertical">
-          <dt>Reviews</dt>
-          <%= render partial: 'reviews/review', collection: @product.reviews %>
-        </dl>
-      </div>
     </div>
+
+    <table class="table table-bordered">
+     <thead>
+       <tr>
+         <th>Review</th>
+         <th>Stars</th>
+         <th>User</th>
+         <th>Date</th>
+        </tr>
+      </thead>
+     <tbody>
+       <%= render partial: 'reviews/review', collection: @product.reviews %>
+     </tbody>
+   </table>
 
   </article>
 

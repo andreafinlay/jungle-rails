@@ -34,7 +34,7 @@ gem 'money-rails'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'stripe'
-gem 'faker'
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'mailgun-ruby', '~>1.1.6'
 
 # Use Capistrano for deployment

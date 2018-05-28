@@ -1,10 +1,14 @@
+<div class="hide">
+  <%= user_ID = review.user_id.to_i %>
+  <%= user = User.find(user_ID) %>
+</div>
+
 <tr>
-  <td>
-    <%= review.rating %>
-    <%= review.description %>
-    <% if current_user.id == review.user_id %>
-        <%= link_to 'Delete', [@product, review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
-      <% end %>
-    <br>
-  </td>
+  <td><%= review.description %> </td>
+  <td><%= review.rating %>   </td>
+  <td><%= user.name %>   </td>
+  <td><%= review.created_at %> </td>
+    <% if current_user && current_user.id == review.user_id %>
+      <td>  <%= link_to 'Delete', [@product, review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %> </td>
+    <% end %>
 </tr>

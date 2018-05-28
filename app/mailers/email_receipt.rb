@@ -11,10 +11,9 @@ class EmailReceipt < ActionMailer::Base
     puts "LINE ITEMS: " + string
     mg_client = Mailgun::Client.new ENV['MAILGUN_API_KEY']
     message_params = {:from    => ENV['MAILGUN_EMAIL'],
-                      :to      => 'andreaafinlay@gmail.com',
+                      :to      => ENV['USER_EMAIL'],
                       :subject => "Jungle - Order Confirmation - Order # #{order.id}",
                       :html    => "<HTML><head></head><body><p>Your order has been successfully placed. Items Purchased: #{string} Total Cost: #{order.total_cents}</p></body></HTML>"}
     mg_client.send_message ENV['MAILGUN_DOMAIN'], message_params
-    puts "******* SENT THE EMAIL *********"
   end
 end
