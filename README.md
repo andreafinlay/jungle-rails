@@ -10,27 +10,27 @@ This app was built using [Rails](https://rubyonrails.org/).
 
 Home page
 
-!["home"]()
+!["home"](https://github.com/andreafinlay/jungle-rails/blob/master/docs/home.png?raw=true)
 
 Product page
 
-!["product"]()
+!["product"](https://github.com/andreafinlay/jungle-rails/blob/master/docs/product.png?raw=true)
 
 Cart
 
-!["cart"]()
+!["cart"](https://github.com/andreafinlay/jungle-rails/blob/master/docs/cart.png?raw=true)
 
 Order confirmation
 
-!["order"]()
+!["order"](https://github.com/andreafinlay/jungle-rails/blob/master/docs/order.png?raw=true)
 
 Admin - products
 
-!["admin-products"]()
+!["admin-products"](https://github.com/andreafinlay/jungle-rails/blob/master/docs/admin-products.png?raw=true)
 
 Admin - categories
 
-!["admin-categories"]()
+!["admin-categories"](https://github.com/andreafinlay/jungle-rails/blob/master/docs/admin-categories.png?raw=true)
 
 ## Getting Started
 
