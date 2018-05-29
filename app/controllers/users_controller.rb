@@ -5,8 +5,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    before_save :lowercase_email
-
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id
@@ -25,9 +23,5 @@ class UsersController < ApplicationController
       :password,
       :password_confirmation
     )
-  end
-
-  def lowercase_email
-    self.email.downcase
   end
 end
